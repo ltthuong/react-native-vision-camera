@@ -1,5 +1,5 @@
 //
-//  CameraView+TakePhoto.swift
+//  CameraView1+TakePhoto.swift
 //  mrousavy
 //
 //  Created by Marc Rousavy on 16.12.20.
@@ -8,7 +8,7 @@
 
 import AVFoundation
 
-extension CameraView {
+extension CameraView1 {
   func takePhoto(options: NSDictionary, promise: Promise) {
     cameraSession.takePhoto(options: options, promise: promise)
   }

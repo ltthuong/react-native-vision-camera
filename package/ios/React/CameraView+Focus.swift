@@ -1,5 +1,5 @@
 //
-//  CameraView+Focus.swift
+//  CameraView1+Focus.swift
 //  VisionCamera
 //
 //  Created by Marc Rousavy on 12.10.23.
@@ -9,7 +9,7 @@
 import AVFoundation
 import Foundation
 
-extension CameraView {
+extension CameraView1 {
   func focus(point: CGPoint, promise: Promise) {
     withPromise(promise) {
       guard let previewView = self.previewView else {

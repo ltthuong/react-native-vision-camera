@@ -1,5 +1,5 @@
 //
-//  CameraView+Zoom.swift
+//  CameraView1+Zoom.swift
 //  mrousavy
 //
 //  Created by Marc Rousavy on 18.12.20.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension CameraView {
+extension CameraView1 {
   @objc
   final func onPinch(_ gesture: UIPinchGestureRecognizer) {
     let scale = max(min(gesture.scale * pinchScaleOffset, cameraSession.maxZoom), CGFloat(1.0))

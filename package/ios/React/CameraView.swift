@@ -1,5 +1,5 @@
 //
-//  CameraView.swift
+//  CameraView1.swift
 //  mrousavy
 //
 //  Created by Marc Rousavy on 09.11.20.
@@ -10,17 +10,17 @@ import AVFoundation
 import Foundation
 import UIKit
 
-// TODOs for the CameraView which are currently too hard to implement either because of AVFoundation's limitations, or my brain capacity
+// TODOs for the CameraView1 which are currently too hard to implement either because of AVFoundation's limitations, or my brain capacity
 //
-// CameraView+RecordVideo
+// CameraView1+RecordVideo
 // TODO: Better startRecording()/stopRecording() (promise + callback, wait for TurboModules/JSI)
 //
-// CameraView+TakePhoto
+// CameraView1+TakePhoto
 // TODO: Photo HDR
 
-// MARK: - CameraView
+// MARK: - CameraView1
 
-public final class CameraView: UIView, CameraSessionDelegate, PreviewViewDelegate, FpsSampleCollectorDelegate {
+public final class CameraView1: UIView, CameraSessionDelegate, PreviewViewDelegate, FpsSampleCollectorDelegate {
   // pragma MARK: React Properties
 
   // props that require reconfiguring
@@ -100,11 +100,11 @@ public final class CameraView: UIView, CameraSessionDelegate, PreviewViewDelegat
   private var currentConfigureCall: DispatchTime?
   private let fpsSampleCollector = FpsSampleCollector()
 
-  // CameraView+Zoom
+  // CameraView1+Zoom
   var pinchGestureRecognizer: UIPinchGestureRecognizer?
   var pinchScaleOffset: CGFloat = 1.0
 
-  // CameraView+TakeSnapshot
+  // CameraView1+TakeSnapshot
   var latestVideoFrame: CMSampleBuffer?
 
   // pragma MARK: Setup

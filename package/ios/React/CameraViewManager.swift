@@ -23,7 +23,7 @@ final class CameraViewManager: RCTViewManager {
   }
 
   override final func view() -> UIView! {
-    return CameraView()
+    return CameraView1()
   }
 
   // pragma MARK: React Functions
@@ -148,9 +148,9 @@ final class CameraViewManager: RCTViewManager {
 
   // MARK: Private
 
-  func getCameraView(withTag tag: NSNumber) -> CameraView {
+  func getCameraView(withTag tag: NSNumber) -> CameraView1 {
     // swiftlint:disable force_cast
-    return bridge.uiManager.view(forReactTag: tag) as! CameraView
+    return bridge.uiManager.view(forReactTag: tag) as! CameraView1
     // swiftlint:enable force_cast
   }
 }

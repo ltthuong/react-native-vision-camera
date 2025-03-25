@@ -1,5 +1,5 @@
 //
-//  CameraView+TakeSnapshot.swift
+//  CameraView1+TakeSnapshot.swift
 //  VisionCamera
 //
 //  Created by Marc Rousavy on 26.02.24.
@@ -9,7 +9,7 @@
 import AVFoundation
 import UIKit
 
-extension CameraView {
+extension CameraView1 {
   func takeSnapshot(options _: NSDictionary, promise: Promise) {
     withPromise(promise) {
       guard let snapshot = latestVideoFrame else {

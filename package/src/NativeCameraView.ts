@@ -1,5 +1,5 @@
 import type { NativeSyntheticEvent } from 'react-native'
-import { requireNativeComponent } from 'react-native'
+import { requireNativeComponent, Platform } from 'react-native'
 import type { ErrorWithCause } from './CameraError'
 import type { CameraProps, OnShutterEvent } from './types/CameraProps'
 import type { Code, CodeScanner, CodeScannerFrame } from './types/CodeScanner'
@@ -55,4 +55,4 @@ export type NativeCameraViewProps = Omit<
 }
 
 // requireNativeComponent automatically resolves 'CameraView' to 'CameraViewManager'
-export const NativeCameraView = requireNativeComponent<NativeCameraViewProps>('CameraView')
+export const NativeCameraView = requireNativeComponent<NativeCameraViewProps>(Platform.OS == 'android' ? 'CameraView' : 'CameraView1')

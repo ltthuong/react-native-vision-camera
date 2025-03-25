@@ -1,5 +1,5 @@
 //
-//  CameraView+RecordVideo.swift
+//  CameraView1+RecordVideo.swift
 //  mrousavy
 //
 //  Created by Marc Rousavy on 16.12.20.
@@ -8,9 +8,9 @@
 
 import AVFoundation
 
-// MARK: - CameraView + AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate
+// MARK: - CameraView1 + AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate
 
-extension CameraView: AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
+extension CameraView1: AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
   func startRecording(options: NSDictionary, callback jsCallback: @escaping RCTResponseSenderBlock) {
     // Type-safety
     let callback = Callback(jsCallback)

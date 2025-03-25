@@ -11,7 +11,7 @@
 #import <React/RCTUtils.h>
 #import <React/RCTViewManager.h>
 
-@interface RCT_EXTERN_REMAP_MODULE (CameraView, CameraViewManager, RCTViewManager)
+@interface RCT_EXTERN_REMAP_MODULE (CameraView1, CameraViewManager, RCTViewManager)
 
 // Module Functions
 RCT_EXTERN__BLOCKING_SYNCHRONOUS_METHOD(getCameraPermissionStatus);
