@@ -22,7 +22,7 @@ import kotlinx.coroutines.*
 @Suppress("unused")
 class CameraViewModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
   companion object {
-    const val TAG = "CameraView"
+    const val TAG = "CameraView1"
     var sharedRequestCode = 10
   }
 

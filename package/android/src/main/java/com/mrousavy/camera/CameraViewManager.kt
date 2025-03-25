@@ -212,7 +212,7 @@ class CameraViewManager : ViewGroupManager<CameraView>() {
   }
 
   companion object {
-    const val TAG = "CameraView"
+    const val TAG = "CameraView1"
 
     val cameraViewTransactions: HashMap<CameraView, ArrayList<String>> = HashMap()
 

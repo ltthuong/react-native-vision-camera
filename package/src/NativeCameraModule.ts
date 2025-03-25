@@ -5,7 +5,7 @@ const supportedPlatforms = ['ios', 'android', 'macos']
 
 // NativeModules automatically resolves 'CameraView' to 'CameraViewModule'
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-export const CameraModule = NativeModules.CameraView
+export const CameraModule = Platform.OS == 'ios' ? NativeModules.CameraView : NativeModules.CameraView1
 if (CameraModule == null) {
   if (!supportedPlatforms.includes(Platform.OS)) {
     throw new CameraRuntimeError(

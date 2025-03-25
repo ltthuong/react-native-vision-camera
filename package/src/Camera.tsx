@@ -1,5 +1,5 @@
 import React from 'react'
-import { requireNativeComponent, NativeSyntheticEvent, findNodeHandle, NativeMethods } from 'react-native'
+import { requireNativeComponent, NativeSyntheticEvent, findNodeHandle, NativeMethods, Platform } from 'react-native'
 import type { CameraDevice } from './CameraDevice'
 import type { ErrorWithCause } from './CameraError'
 import { CameraCaptureError, CameraRuntimeError, tryParseNativeCameraError, isErrorWithCause } from './CameraError'
@@ -467,7 +467,7 @@ export class Camera extends React.PureComponent<CameraProps> {
 
 // requireNativeComponent automatically resolves 'CameraView' to 'CameraViewManager'
 const NativeCameraView = requireNativeComponent<NativeCameraViewProps>(
-  'CameraView',
+  Platform.OS === 'ios' ? 'CameraView' : 'CameraView1',
   // @ts-expect-error because the type declarations are kinda wrong, no?
   Camera,
 )
